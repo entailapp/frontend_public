@@ -1,0 +1,47 @@
+{
+  "name": "@entail/client-web",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "export": "npm run build && next export",
+    "test": "jest",
+    "eslint": "eslint \"src\" \"pages\" --ext .js,.jsx,.ts,.tsx --fix",
+    "stylelint": "stylelint \"**/*.{css,scss,sass}\" --ignore-path .gitignore --fix"
+  },
+  "dependencies": {
+    "@date-io/date-fns": "1.x",
+    "@entail/api-client": "workspace:*",
+    "@entail/business-logic": "workspace:*",
+    "@iconicicons/react": "^1.5.0",
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/pickers": "^3.3.10",
+    "@sentry/nextjs": "^6.11.0",
+    "clsx": "^1.1.1",
+    "date-fns": "^2.23.0",
+    "formik": "^2.2.9",
+    "next": "^11.1.0",
+    "nprogress": "^0.2.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^12.0.0",
+    "@types/jest": "^27.0.1",
+    "@types/nprogress": "^0.2.0",
+    "@types/react": "^17.0.17",
+    "@types/react-dom": "^17.0.9",
+    "autoprefixer": "^10.3.1",
+    "babel-plugin-transform-imports": "^2.0.0",
+    "eslint-config-next": "^11.1.0",
+    "eslint-plugin-react": "^7.24.0",
+    "jest": "^27.0.6",
+    "postcss": "^8.3.6",
+    "sass": "^1.37.5",
+    "tailwindcss": "^2.2.7"
+  },
+  "engines": {
+    "node": ">=14.17.3"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "defaultProject": "client-web",
+  "projects": {
+    "client-web": {
+      "root": "apps/client-web",
+      "projectType": "application"
+    },
+    "client-mobile": {
+      "root": "apps/client-mobile",
+      "projectType": "application"
+    },
+    "api-client": {
+      "root": "libs/api-client",
+      "projectType": "library"
+    },
+    "business-logic": {
+      "root": "libs/business-logic",
+      "projectType": "library"
+    }
+  }
+}

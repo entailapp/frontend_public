@@ -1,0 +1,25 @@
+{
+  "name": "@entail/business-logic",
+  "version": "1.0.1",
+  "private": true,
+  "description": "a collection of methods used throughout entail",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "test": "jest",
+    "eslint": "eslint \"src\" --ext .js,.jsx,.ts,.tsx --fix",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "@babel/preset-typescript": "^7.15.0",
+    "@zxcvbn-ts/core": "^1.0.0-beta.0",
+    "@zxcvbn-ts/language-common": "^1.0.0-beta.0",
+    "date-fns": "^2.23.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.1",
+    "jest": "^27.0.6"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "lib": ["dom"],
+    "declaration": true,
+    "outDir": "dist",
+    "esModuleInterop": true, // React requirement
+    "isolatedModules": true // Babel TypeScript requirement
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "**/*spec.ts", "**/*spec.tsx"]
+}

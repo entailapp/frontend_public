@@ -1,0 +1,35 @@
+{
+  "private": true,
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "preinstall": "npx only-allow yarn",
+    "start": "expo start",
+    "eslint": "eslint . --ext .js,.jsx,.ts,.tsx --ignore-path .gitignore --fix",
+    "tailwind": "pnpx create-tailwind-rn"
+  },
+  "dependencies": {
+    "@entail/api-client": "file:../../libs/api-client",
+    "@entail/business-logic": "file:../../libs/business-logic",
+    "@expo-google-fonts/inter": "^0.2.0",
+    "@react-navigation/native": "^5.9.4",
+    "expo": "^41.0.1",
+    "expo-app-loading": "^1.0.3",
+    "expo-cli": "^4.7.2",
+    "expo-font": "~9.1.0",
+    "expo-status-bar": "^1.0.4",
+    "iconic-icons-rn": "^1.1.0",
+    "react": "16.13.1",
+    "react-native": "^0.63.x",
+    "react-native-safe-area-context": "3.2.0",
+    "tailwind-rn": "^3.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@types/react": "^17.0.11",
+    "@types/react-native": "^0.63.x",
+    "tailwindcss": "^2.2.4"
+  },
+  "engines": {
+    "node": ">=14.17.3"
+  }
+}

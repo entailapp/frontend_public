@@ -1,0 +1,36 @@
+{
+  "name": "entail",
+  "private": true,
+  "homepage": "https://github.com/entailapp/front-end#readme",
+  "bugs": {
+    "url": "https://github.com/entailapp/front-end/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/entailapp/front-end.git"
+  },
+  "license": "ISC",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "postinstall": "nx run api-client:build:production && nx run business-logic:build",
+    "prepare": "husky install",
+    "nx": "nx",
+    "graph": "nx dep-graph",
+    "eslint": "nx run-many --target=eslint --all",
+    "stylelint": "nx run-many --target=stylelint --all"
+  },
+  "resolutions": {
+    "@types/react": "^17.0.14"
+  },
+  "devDependencies": {
+    "@nrwl/cli": "^12.7.1",
+    "@nrwl/tao": "^12.7.1",
+    "@nrwl/workspace": "^12.7.1",
+    "gts": "^3.1.0",
+    "husky": "^7.0.1",
+    "prettier": "^2.3.2",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^22.0.0",
+    "typescript": "^4.3.5"
+  }
+}

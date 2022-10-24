@@ -1,0 +1,4 @@
+packages:
+  - 'apps/client-web'
+  - 'libs/api-client'
+  - 'libs/business-logic'
